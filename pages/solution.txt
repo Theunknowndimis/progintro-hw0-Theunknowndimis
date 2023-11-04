@@ -1,1 +1,4 @@
 https://theunknowndimis.github.io/progintro-hw0-Theunknowndimis
+
+bandit0:bandit0
+bandit1:
