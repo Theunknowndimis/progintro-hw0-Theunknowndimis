@@ -9,4 +9,5 @@ bandit7: Κάνουμε find / -type f -user bandit7 -group bandit6 -size 33c α
 bandit8: Κάνουμε ls -alps για να δούμε τα αρχεία, βλέπουμε ένα αρχείο data.txt. Κάνουμε cat data.txt και εμφανίζονται πολλά strings. 'Επειτα, strings data.txt | grep "millionth" διότι θέλουμε να βρούμε τον κωδικό δίπλα στην λέξη millionth και εμφανίζεται ο κωδικός TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 bandit9: Κάνουμε cat data.txt για να δούμε τα αρχεία και επειδή υπάρχουν duplicates θα κάνουμε sort data.txt για να είναι οργανωμένα. Όμως, επειδή δεν μπορούμε να βρούμε αυτόν τον κωδικό που επαναλαμβάνεται μόνο μία φορά, θα χρησιμοποιήσουμε την εντολή uniq, δηλαδή sort data.txt | uniq -c, έτσι ώστε να μας εμφανίσει πόσες φορές επαναλαμβάνεται ο κάθε κωδικός. Μέσα στους πολλούς κωδικούς, παρατηρούμε έναν ο οποίος επαναλαμβάνεται μόνο μία φορά και είναι ο EN632PlfYiZbn3PhVK3XOGSlNInNE00t
 bandit10: Κάνουμε strings data.txt | grep "=" διότι ο κωδικός είναι μέσα σε έναν φάκελο ο οποίος έχει strings και κάνουμε grep "=" αφού προηγούνται χαρακτήρες =
-bandit11: 
+bandit11: Κάνουμε cat data.txt για να δούμε το αρχείο και μετά base64 -d data.txt για να αποκρυπτογραφήσουμε το αρχείο και εμφανίζεται ο κωδικός 6zPeziLdR2RKNdNYFNb6nVCKzphlXHBM
+bandit12: 
