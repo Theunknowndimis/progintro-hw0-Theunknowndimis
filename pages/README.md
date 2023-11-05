@@ -6,7 +6,7 @@ bandit4: ls για να δούμε τα αρχεία, βρίσκουμε ένα 
 bandit5: ls για να δούμε τα αρχεία, cd inhere/ ls ξανά για να δούμε τα αρχεία και ls -la για να δούμε εκτεταμένες πληροφορίες για αυτά. Έπειτα, για να αναζητήσουμε για τα files κάνουμε files./-*  και μας εμφανίζει 10 files από τα οποία ξεχωρίζει ένα, το ./-file07. Για να μπούμε σε αυτό χρησιμοποιούμε cat ./-file07 και εμφανίζεται ο κωδικός lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
 bandit6: ls για να δούμε τα αρχεία, cd inhere/ για να μεταβούμε σε συτόν τον κατάλογο. Έπειτα, κάνουμε find . -type f -size 1033c ! -executable διότι συτό το αρχείο που αναζητούμε είναι human readable, έχει μέγεθος 1033 bytes και δεν είναι executable. Αφού κάνουμε αυτήν την εντολή, μας εμφανίζει έναν κατάλογο με ένα αρχείο και κάνουμε cat ./maybehere07/.file2  για να δούμε τι περιέχει το αρχείο και είναι ο κωδικός P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU 
 bandit7: Κάνουμε find / -type f -user bandit7 -group bandit6 -size 33c αφού είναι αρχείο, ο user είναι ο bandit7, το group είναι ο bandit6 και έχει μέγεθος 33 bytes. Έπειτα, μας εμφανίζει πολλά αρχεία αλλά το /var/lib/dpkg/info/bandit7.password ξεχωρίζει. Τέλος, κάνουμε cat /var/lib/dpkg/info/bandit7.password και μας εμφανίζεται ο κωδικός z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S
-bandit8: 
+bandit8: Κάνουμε ls -alps για να δούμε τα αρχεία, βλέπουμε ένα αρχείο data.txt. Κάνουμε cat data.txt και εμφανίζονται πολλά strings. 'Επειτα, strings data.txt | grep "millionth" διότι θέλουμε να βρούμε τον κωδικό δίπλα στην λέξη millionth και εμφανίζεται ο κωδικός TESKZC0XvTetK0S9xNwm25STk5iWrBvP
 bandit9: 
 bandit10: 
 bandit11: 
